@@ -9,7 +9,16 @@ $worked = file_put_contents("../config.php", $toWrite, FILE_APPEND);
 if ($worked==false){
 	$status = "ERROR: Filewrite failed.";
 } else {
-	$status = "Success! <font color=\"#FF0000\">Just delete the directory 'install'</font> and your URL shortener will be ready!";
+	$status = "Success! <font color=\"#FF0000\">Just delete the directory 'install'</font> and your URL shortener will be ready!<br><a href="../">Click here to return to the homepage</a>";
+}
+
+if (isset($_GET['rminstall']))
+{
+    $rminst = $_GET['rminstall']==1;
+    if ($rminst)
+    {
+    	rmdir('.');
+    }
 }
 
 ?>

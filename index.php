@@ -34,6 +34,7 @@ if ($string != ""){
 }
 
 ?>
+
 <html>
 <head>
 	<title>Redirecting...</title>

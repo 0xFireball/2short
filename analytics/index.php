@@ -1,5 +1,4 @@
 <?php
-include('../config.php');
 session_start();
 ?>
 <form action="auth.php" method="POST">

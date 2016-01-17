@@ -12,15 +12,6 @@ if ($worked==false){
 	$status = "Success! <font color=\"#FF0000\">Just delete the directory 'install'</font> and your URL shortener will be ready!<br><a href="../">Click here to return to the homepage</a>";
 }
 
-if (isset($_GET['rminstall']))
-{
-    $rminst = $_GET['rminstall']==1;
-    if ($rminst)
-    {
-    	rmdir('.');
-    }
-}
-
 ?>
 
 <html>

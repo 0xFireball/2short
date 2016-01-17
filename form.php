@@ -51,7 +51,7 @@ if ($exist===false){
 
             <h3>Shorten a URL</h3>
             <form id="shortenURL" method="post" action="newurl.php">
-            <label for="url">URL: (include http://)</label><input type="text" size=50 name="url" id="url" value="" /><br \><br \>
+            <label for="url">URL: (include http://) </label><input type="text" size=50 name="url" id="url" value="" /><br \><br \>
             <label for="key">Keyword (optional): </label><input type="text" size=25 name="key" id="key" /><br \><br \>
             <input type="submit" value="Shorten"/>
             </form>

@@ -1,4 +1,5 @@
 <?php
+include('functions.php');
 session_start();
 if (!isset($_SESSION['auth']))
 {
@@ -6,3 +7,13 @@ if (!isset($_SESSION['auth']))
     die("ERROR: Not logged in.");
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2Short - 0xFireball Edition - Analytics Reporting</title>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -14,7 +14,8 @@ function recordAnalytics($url,$id,$db)
     $lines = file($fn, FILE_IGNORE_NEW_LINES);
     //save number of hits
     $hits = $lines[0] = intval($lines[0])+1;
-    
+    //save URL
+    $lines[1]=$url;
     //save contents from array
     file_put_contents($fn, implode(PHP_EOL, $lines));
 }

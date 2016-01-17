@@ -2,7 +2,9 @@
 
 $toWrite = '$logURL = "' . $_POST['logName'] . '";
 $contact = "' . $_POST['email'] . '";
+$analyticspw = "' . $_POST['analytics'] . '";
 $idLength = ' . $_POST['idLen'] . '; ?>';
+
 $toWrite = $toWrite."\r\n<?php ".'$installdone'." = true;?>";
 
 $worked = file_put_contents("../config.php", $toWrite, FILE_APPEND);

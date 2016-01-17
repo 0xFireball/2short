@@ -10,10 +10,13 @@ function recordAnalytics($url,$id,$db)
     {
         file_put_contents($fn,strval(0));
     }
+    //turn file into array
     $lines = file($fn, FILE_IGNORE_NEW_LINES);
-    $hits = intval($lines[0])+1;
-    file_put_contents($fn,$hits);
-    die($fn);
+    //save number of hits
+    $hits = $lines[0] = intval($lines[0])+1;
+    
+    //save contents from array
+    file_put_contents($fn, implode(PHP_EOL, $lines));
 }
 
 //Function to get URL of current page.

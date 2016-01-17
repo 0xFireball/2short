@@ -17,9 +17,7 @@
 
 2. CHMOD "urls.txt" and "config.php" to 755.
 
-3. Rename install.bkp directory to install
-
-4. Visit install directory and enter information:
+3. Visit install directory and enter information:
 
 Example:
 http://website.com/install/

@@ -6,6 +6,8 @@ require("functions.php");
 //Check if directory /install exists.
 if (file_exists("install") && is_dir("install")) {
 	die("ERROR. Directory /install still exists! Please go throught the installation process in the directory /install. If you have installed 2short, delete the directory /install.");
+	echo('<a href="./install/">Click this link to visit the installer</a>');
+	die();
 }
 
 //Get URL and check for no URL.

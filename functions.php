@@ -5,7 +5,7 @@ require('config.php');
 //Record analytics in database
 function recordAnalytics($url,$id)
 {
-    $fn = $andb+$id;
+    $fn = $andb.$id;
     die($fn);
 }
 

@@ -27,7 +27,8 @@ if ($string != ""){
 			$pos2 = strpos($query,"|",$pos1);
 			$strlength = $pos2 - $pos1;
 			$geturl = substr($query,$pos1,$strlength);
-			recordAnalytics($geturl,$url);
+			
+			recordAnalytics($geturl,$string);
 			die($geturl);
 		}
 } else {

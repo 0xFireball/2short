@@ -41,6 +41,7 @@ if ($worked==false){
     <form method="post" action="3.php">
     <label for="logName">Log filename: </label><input type="text" id="logName" name="logName" size="15" value="urls.txt"/><br \><br \>
     <label for="email">Your email: </label><input type="text" id="email" name="email" size="25" /> <font size="small">(displayed)</font><br \><br \>
+    <label for="analytics">Your administration password: </label><input type="password" id="analytics" name="analytics" size="25" /> <font size="small">(for accessing analytics)</font><br \><br \>
     <label for="idLen">Length of randomly generated IDs: </label><input type="text" id="idLen" name="idLen" size="3" value="4" /><br \><font size="2">Used when visitor doesn't enter custom keyword.</font><br \><br \>
     <input type="submit" value="Finish" />
     </form>

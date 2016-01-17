@@ -3,6 +3,7 @@
 $toWrite = '$logURL = "' . $_POST['logName'] . '";
 $contact = "' . $_POST['email'] . '";
 $analyticspw = "' . $_POST['analytics'] . '";
+$andb = "analytics/db/"; //analytics database
 $idLength = ' . $_POST['idLen'] . '; ?>';
 
 $toWrite = $toWrite."\r\n<?php ".'$installdone'." = true;?>";

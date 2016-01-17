@@ -27,6 +27,7 @@ if ($string != ""){
 			$pos2 = strpos($query,"|",$pos1);
 			$strlength = $pos2 - $pos1;
 			$geturl = substr($query,$pos1,$strlength);
+			die($geturl);
 		}
 } else {
 	//Redirect to real main page (form.php).

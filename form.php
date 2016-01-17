@@ -10,6 +10,7 @@ if (file_exists("install") && is_dir("install")) {
         if ($installdone)
         {
             unlinkrecursive('install',true);
+            header("Refresh:0");
             die('Installation finished. Refresh to activate your URL Shortener!');
         }
     }

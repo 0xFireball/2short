@@ -25,9 +25,9 @@ if (strpos($url,"index.php")) {
 </head>
 <body>
 
-	<h2>2short Installer -- Page 1</h2>
+	<h2>2short - 0xFireball Edition Installer -- Page 1</h2>
     
-    <p>Thanks for using 2short! Just go through this quick installation process, and your URL shortener will be ready in a matter of minutes!</p>
+    <p>Thanks for using 2short - 0xFireball Edition! Just go through this quick installation process, and your URL shortener will be ready in a matter of minutes!</p>
     <br \><br \>
     <p>This form is just your website's basics - title, description, etc.</p>
     <form method="post" action="2.php">

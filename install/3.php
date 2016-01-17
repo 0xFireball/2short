@@ -10,7 +10,7 @@ $worked = file_put_contents("../config.php", $toWrite, FILE_APPEND);
 if ($worked==false){
 	$status = "ERROR: Filewrite failed.";
 } else {
-	$status = "Success! <font color=\"#FF0000\">Just delete the directory 'install'</font> and your URL shortener will be ready!<br><a href=\"../\">Click here to return to the homepage</a>";
+	$status = "Success! 2short - 0xFireball Edition has been installed! <font color=\"#FF0000\"><a href=\"../\">Click here to return to the homepage and clean up a few things to complete the installation.</a></font>";
 }
 
 ?>

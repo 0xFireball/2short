@@ -10,6 +10,9 @@
 
 --0xFireball Customized Edition--
 
+Contains bug fixes and random tweaks to improve the URL shortener overall.
+Most of the changes are behind the scenes in the PHP backend.
+
 
 [[ Installation ]]
 

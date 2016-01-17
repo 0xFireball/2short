@@ -14,6 +14,13 @@ if (!isset($_SESSION['auth']))
         <title>2Short - 0xFireball Edition - Analytics Reporting</title>
     </head>
     <body>
-        
+        <div id="clicks">
+            <h1>URL Click Statistics</h1>
+            <pre>
+                <?php
+                    print_r(getClickList());
+                ?>
+            </pre>
+        </div>
     </body>
 </html>

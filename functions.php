@@ -6,6 +6,13 @@ require('config.php');
 function recordAnalytics($url,$id,$db)
 {
     $fn = $db.$id;
+    if (!file_exists($fn))
+    {
+        file_put_contents($fn,strval(0));
+    }
+    $lines = file($fn, FILE_IGNORE_NEW_LINES);
+    $hits = intval($lines[0])+1;
+    file_put_contents($fn,$hits);
     die($fn);
 }
 

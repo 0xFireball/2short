@@ -31,7 +31,9 @@ if ($string != ""){
 			recordAnalytics($geturl,$string,$andb);
 			die("Go to ... $geturl");
 		}
-} else {
+		
+} 
+else {
 	//Redirect to real main page (form.php).
 	$geturl = $webURL . "form.php";
 }

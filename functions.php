@@ -1,5 +1,14 @@
 <?php
 
+require('config.php');
+
+//Record analytics in database
+function recordAnalytics($url,$id)
+{
+    $fn = $andb+$id;
+    die($fn);
+}
+
 //Function to get URL of current page.
 function getURL() {
 	$pageURL = 'http';

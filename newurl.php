@@ -62,8 +62,6 @@ if (!empty($url)){
 	//Function to select shortened URL.
 	function selectURL() {
 		document.getElementById("shortURL").select();
-		var url = document.getElementById("shortURL").innerHTML;
-		alert(url);
 	}
 	</script>
 </head>

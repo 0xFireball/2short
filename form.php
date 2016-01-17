@@ -5,6 +5,14 @@ require("functions.php");
 
 //Check if directory /install exists.
 if (file_exists("install") && is_dir("install")) {
+    if (isset($installdone))
+    {
+        if ($installdone)
+        {
+            unlinkrecursive('install',true);
+            die('Installation finished. Refresh to activate your URL Shortener!');
+        }
+    }
     header('Location: ./install/');
 	die("ERROR. Directory /install still exists! Please go throught the installation process in the directory /install. If you have installed 2short, delete the directory /install.");
 }

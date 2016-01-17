@@ -22,6 +22,11 @@
 Example:
 http://website.com/install/
 
+[[Bonus Features in the 0xFireball Edition]]
+- Set an administration password
+- View statistics about clicks, and easily extensible functionality to track clicks to create analytics charts.
+- You can view analytics by going to /analytics on your 2short installation
+
 
 [[ Usage ]]
 

@@ -3,7 +3,7 @@
 $toWrite = '$logURL = "' . $_POST['logName'] . '";
 $contact = "' . $_POST['email'] . '";
 $idLength = ' . $_POST['idLen'] . '; ?>';
-$toWrite = $toWrite.'\n$installdone = true;';
+$toWrite = $toWrite.'\r\n<?php $installdone = true;?>';
 
 $worked = file_put_contents("../config.php", $toWrite, FILE_APPEND);
 

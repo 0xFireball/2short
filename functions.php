@@ -3,9 +3,9 @@
 require('config.php');
 
 //Record analytics in database
-function recordAnalytics($url,$id)
+function recordAnalytics($url,$id,$db)
 {
-    $fn = $andb.$id;
+    $fn = $db.$id;
     die($fn);
 }
 

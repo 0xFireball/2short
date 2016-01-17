@@ -28,8 +28,8 @@ if ($string != ""){
 			$strlength = $pos2 - $pos1;
 			$geturl = substr($query,$pos1,$strlength);
 			
-			recordAnalytics($geturl,$string);
-			die($geturl);
+			recordAnalytics($geturl,$string,$andb);
+			die("Go to ... $geturl");
 		}
 } else {
 	//Redirect to real main page (form.php).

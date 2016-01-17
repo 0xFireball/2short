@@ -2,10 +2,13 @@
 //Return array with link name and click list
 function getClickList()
 {
-    $fileList = scandir('db');
+    //get list of files in db
+    $fileList = glob('db/*');
+    
     $clickList=array();
-    for ($i = 0; $i < count($array); ++$i) {
-        $flines = readAllLines($fileList[i]);
+    for ($i = 0; $i < count($fileList); ++$i) {
+        $filen = $fileList[$i];
+        $flines = readAllLines($filen);
         $hits=$flines[0];
         $url=$flines[1];
         $clickList[$url]=$hits;

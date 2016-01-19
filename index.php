@@ -29,7 +29,7 @@ if ($string != ""){
 			$geturl = substr($query,$pos1,$strlength);
 			
 			recordAnalytics($geturl,$string,$andb);
-			die("Go to ... $geturl");
+			//die("Go to ... $geturl");
 		}
 		
 } 

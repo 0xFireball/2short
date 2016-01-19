@@ -5,6 +5,9 @@ require('config.php');
 //Record analytics in database
 function recordAnalytics($url,$id,$db)
 {
+    if (!file_exists($db)) {
+        mkdir($db, 0775, true);
+    }
     $fn = $db.$id;
     if (!file_exists($fn))
     {

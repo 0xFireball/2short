@@ -1,7 +1,7 @@
 <?php
 include('functions.php');
 session_start();
-if (!isset($_SESSION['auth']))
+if (!isset($_SESSION['auth'])||$_SESSION['auth']!=1)
 {
     header('Location: index.php');
     die("ERROR: Not logged in.");

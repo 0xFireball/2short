@@ -6,6 +6,6 @@ $cpw = $_POST['password']; //submitted password
 if ($cpw == $analyticspw)
 {
     $_SESSION['auth']=1;
-    header('Location: data.php');
 }
+header('Location: data.php');
 ?>
